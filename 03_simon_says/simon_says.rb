@@ -29,7 +29,7 @@ def titleize(any_string)
   if array_of_words.length>1
     for i in 1..array_of_words.length 
       string+=" "
-      if !(array_little.include? array_of_words[i]) #!=" ")&&(array_of_words[i]!="the")&&(array_of_words[i]!="on")&&(array_of_words[i]!="a")&&(array_of_words[i]!="on")&&(array_of_words[i]!="at")&&(array_of_words[i]!="in")&&(array_of_words[i]!="for") &&(array_of_words[i]!="and")&&(array_of_words[i]!="over")
+      if !(array_little.include? array_of_words[i])
           string+=array_of_words[i].to_s.capitalize
       else #not capitalizes
           string+=array_of_words[i].to_s #little words are not capitalized
