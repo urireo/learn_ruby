@@ -23,7 +23,7 @@ def first_word(any_string="")
 end
 
 def titleize(any_string)
-  array_of_words=any_string.split(/\s/)
+  array_of_words=any_string.split(/\s/) #transforms a string into array
   string=array_of_words[0].capitalize #capitalizes first word of sentence
   array_little=["the","a","on","to","by","at","in","for","and","over"," "]
   if array_of_words.length>1

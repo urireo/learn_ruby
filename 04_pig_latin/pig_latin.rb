@@ -1,11 +1,8 @@
-#write your code here
 def oneword(word_to_translate="")
   word_array=word_to_translate.scan (/\w/)  #creates an array with all the letters in the word argument [s,q,u,a,r,e]
   first_letter=word_to_translate[0]  #assigns first letter of word "a"
   vowels=["a","e","i","o","u","A","E","I","O","U"]
   first_letter_is_consonant = !vowels.include?(first_letter)
- # is_it_consonant= !(vowels.include?(word_array[0]))
-  #is_there_sq= !((first_letter=="u" or first_letter=="U") and (word_array=="Q" or word_array=="q")) 
   while first_letter_is_consonant and !((first_letter=="u" or first_letter=="U") and (word_array=="Q" or word_array=="q"))      #first letter is  a consonant   
     letter=word_array.shift
     word_array<< letter        #pushes first letter to end of word
